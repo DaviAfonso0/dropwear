@@ -48,6 +48,7 @@ header > a{
 }
 
 .submit > input{
+    background-color: #ffffff;
     border-radius: 5px 0px 0px 5px;
     border: none;
     width: 250px;
@@ -68,9 +69,6 @@ header > a{
     cursor: pointer;
     
 }
-
-
-
 
 .lista-nav {
     display: flex;
