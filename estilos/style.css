@@ -70,6 +70,8 @@ header > a{
 }
 
 
+
+
 .lista-nav {
     display: flex;
     flex-flow: column nowrap;
@@ -85,8 +87,14 @@ header > a{
     border-radius: 10px;
 }
 
+#carrinho{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    column-gap: 5px;
+}
 .lista-nav span{
-    display: none;
+    color: white;
 }
 
 .lista-nav a{
