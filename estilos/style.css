@@ -53,9 +53,11 @@ header > a{
     border: none;
     width: 250px;
     font-size: 1rem;
+    padding-left: 5px;
 }
 
 .submit > input::placeholder{
+    padding-left: 5px;
     font-size: 1rem;
     font-weight: bold;
 }
@@ -87,6 +89,7 @@ header > a{
 
 #carrinho{
     display: flex;
+    flex-flow: row nowrap;
     align-items: center;
     justify-content: center; 
     column-gap: 5px;
@@ -100,6 +103,72 @@ header > a{
     text-decoration: none;
     color: white;
 }
+
+.main-produtos{
+    background-color: var(--cor-main);
+    
+}
+.main-produtos h1{
+   padding-top: 20px;
+   font-size: 1.5rem;
+   color: white;
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+.lista-produtos{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 50px;
+
+    list-style-type: none;
+}
+
+.lista-produtos > li{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: var(--cor-card);
+    border-radius: 10px;
+    padding: 20px 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    
+}
+.imagem-produto{
+    padding: 20px;
+    background-color: #3a3a3a77;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.lista-produtos  h2{
+    text-align: center;
+    color: white;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.lista-produtos p{
+    text-align: center;
+}
+
+.preco-produto{
+    font-size: 1.4rem;
+    color: white;
+    
+}
+
+.preco{
+    color: lightgray;
+    font-size: 1.1rem;
+}
+
+
+
 
 
 
