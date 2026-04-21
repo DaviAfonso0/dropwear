@@ -29,14 +29,20 @@ body{
 header{
     display: flex;
     flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
     padding: 30px;
     background-color: var(--cor-header);
 }
+.principal{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
 
-header > a{
-    margin-bottom: 20px;
+.nav-header{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .submit{
@@ -72,6 +78,14 @@ header > a{
     
 }
 
+.carrinho-desktop{
+    display: none;
+}
+
+#catalogo{
+    display: none;
+}
+
 .lista-nav {
     display: flex;
     flex-flow: column nowrap;
@@ -91,13 +105,14 @@ header > a{
     border-radius: 10px;
 }
 
-#carrinho{
+#link-carrinho{
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     justify-content: center; 
     column-gap: 5px;
 }
+
 .lista-nav span{
     color: white;
 }
@@ -109,6 +124,7 @@ header > a{
 }
 
 .main-produtos{
+    padding: 30px 0px;
     background-color: var(--cor-main);   
 }
 .main-produtos h1{
@@ -178,12 +194,16 @@ p > span{
     opacity: 0.8;
 }
 
+footer{
+    background-color: var(--cor-footer);
+    padding: 20px;
+}
+
 .footer-index{
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     row-gap: 30px;
-    background-color: var(--cor-footer);
 }
 
 .lista-politicas{
@@ -219,6 +239,96 @@ p > span{
     margin-right: 20px;
 }
 
+.copy{
+    margin-top: 30px;
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+}
+
+
+@media (min-width: 850px){
+    .principal{
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+
+    .carrinho-desktop{
+        display: none;
+    }
+
+    #catalogo{
+    display: none;
+}
+
+    .lista-nav{
+        flex-flow: row nowrap;
+    }
+
+    .lista-nav > li{
+        width: 150px;
+        background: none;
+        
+    }
+    .main-produtos > h1{
+        font-size: 2rem;
+    }
+
+    .lista-produtos{
+        flex-flow: row wrap;
+        justify-content: center;
+        column-gap: 50px;
+    }
+
+    .footer-index{
+        flex-flow: row wrap;
+        align-items: flex-start;
+        justify-content: center;
+        column-gap: 40px;
+    }
+}
+
+@media (min-width: 1100px){
+    .principal{
+        justify-content: center;
+        column-gap: 40px;
+    }
+
+    .submit > input{
+        width: 700px;
+    }
+    .submit > button {
+        width: 60px;
+    }
+    .carrinho-desktop{
+        display: inline;        
+        color: white;
+        
+    }
+
+    #catalogo{
+        display: inline;
+    }
+
+    .nav-header{
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+
+
+    #carrinho-desktop{
+        height: 4rem;
+        font-size: 3rem;
+    }
+
+    #link-carrinho{
+        display: none;
+    }
+
+    .footer-index{
+        justify-content: space-evenly;
+    }
+}
 
 
 

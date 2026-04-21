@@ -10,26 +10,39 @@
 </head>
 <body>
     <header>
-        <a href="index.html"><img src="imagens/logo-3.png" alt="Logo "></a>
-        <form action="cadastro.html" method="get">
-            <div class="submit">
-                <input type="search" placeholder=" O que você procura?">
-                <button type="submit">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#434343"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
-                </button>
-            </div>
-        </form>
+        <div class="principal">
+            <a href="index.html"><img src="imagens/logo-3.png" alt="Logo Drop Wear" id="imagem-logo"></a>
+            <form action="cadastro.html" method="get" id="form-index">
+                <div class="submit">
+                    <input type="search" placeholder=" O que você procura?">
+                    <button type="submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#434343"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+                    </button>
+                </div>
+           </form>
+            <a href="#" class="carrinho-desktop">
+                <span class="material-symbols-outlined" id="carrinho-desktop">
+                    shopping_cart
+                </span>
+            </a>
+        </div>
+        
         <nav class="nav-header">
             <ul class="lista-nav">
                 <li><a href="index.html">Início</a></li>
                 <li><a href="#">Produtos</a></li>
                 <li><a href="#">Login</a></li>
                 <li><a href="#">Cadastro</a></li>
-                <li id="carrinho">
-                    <span class="material-symbols-outlined">
+                <li id="link-carrinho">
+                    <a href="#" id="link-carrinho">
+                        <span class="material-symbols-outlined">
                         shopping_cart
                     </span>
-                    <a href="#">Carrinho</a>
+                    Carrinho
+                </a>
+                </li>
+                <li id="catalogo">
+                    <a href="#">Catálogo</a>
                 </li>
             </ul>
         </nav>
@@ -169,43 +182,45 @@
             </ul>
         </nav>
     </main>
-    <footer class="footer-index">
-        <section class="secao-footer">
-            <h3 class="titulo-footer">Navegação</h3>
-            <nav>
-                <ul class="lista-politicas">
-                    <li><a href="#">Loja</a></li>
-                    <li><a href="#">Política de troca</a></li>
-                    <li><a href="#">Política de privacidade</a></li>
-                    <li><a href="#">Termos de uso<</a></li>
-                    <li><a href="#">Frete e entrega</a></li>
-                </ul>
-            </nav>
-        </section>
-        <section class="secao-footer">
-            <h3 class="titulo-footer">Redes/Contatos</h3>
-                <div>
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="redes">
-                        <img src="imagens/gmail.png" alt="logo email" class="logos">
-                    </a>
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="redes">
-                        <img src="imagens/instagram.png" alt="logo instagram" class="logos">
-                    </a>
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="redes">
-                        <img src="imagens/tik-tok.png" alt="logo tik tok" class="logos">
-                    </a>
-                </div>
-        </section>
-        <section class="secao-footer">
-            <h3 class="titulo-footer">Formas de Pagamento</h3>
-            <img src="imagens/pix-logo.png" alt="logo pix" class="logos">
-            <img src="imagens/mastercard.png" alt="logo mastercard" class="logos">
-            <img src="imagens/visa.png" alt="logo visa" class="logos">
-            <img src="imagens/elo.png" alt="logo elo" class="logos">
-            <img src="imagens/boleto.png" alt="logo boleto" class="logos">
-        </section>
+    <footer>
+        <div class="footer-index">
+            <section class="secao-footer">
+                <h3 class="titulo-footer">Navegação</h3>
+                <nav>
+                    <ul class="lista-politicas">
+                        <li><a href="#">Loja</a></li>
+                        <li><a href="#">Política de troca</a></li>
+                        <li><a href="#">Política de privacidade</a></li>
+                        <li><a href="#">Termos de uso<</a></li>
+                        <li><a href="#">Frete e entrega</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section class="secao-footer">
+                <h3 class="titulo-footer">Redes/Contatos</h3>
+                    <div>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="redes">
+                            <img src="imagens/gmail.png" alt="logo email" class="logos">
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="redes">
+                            <img src="imagens/instagram.png" alt="logo instagram" class="logos">
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="redes">
+                            <img src="imagens/tik-tok.png" alt="logo tik tok" class="logos">
+                        </a>
+                    </div>
+            </section>
+            <section class="secao-footer">
+                <h3 class="titulo-footer">Formas de Pagamento</h3>
+                <img src="imagens/pix-logo.png" alt="logo pix" class="logos">
+                <img src="imagens/mastercard.png" alt="logo mastercard" class="logos">
+                <img src="imagens/visa.png" alt="logo visa" class="logos">
+                <img src="imagens/elo.png" alt="logo elo" class="logos">
+                <img src="imagens/boleto.png" alt="logo boleto" class="logos">
+            </section>
+        </div>
         <section class="copy">
-            <p>Copyright &copy; -  2026 Drop Wear</p>
+            <p>Drop Wear 2026 - Todos os Direios Reservados &copy;Copyright</p>
         </section>
     </footer>
 </body>
