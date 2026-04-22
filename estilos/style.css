@@ -47,8 +47,7 @@ header{
 
 .submit{
     display: flex;
-    flex-grow: row nowrap;
-    justify-content: center;
+    flex-flow: row nowrap;
     margin-bottom: 20px;
 
 }
@@ -105,7 +104,7 @@ header{
     border-radius: 10px;
 }
 
-#link-carrinho{
+.link-carrinho{
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -190,7 +189,7 @@ header{
 
 p > span{
     color: lightgray;
-    font-size: 0.8;
+    font-size: 0.8rem;
     opacity: 0.8;
 }
 
@@ -290,15 +289,15 @@ footer{
 
 @media (min-width: 1150px){
     .principal{
-        justify-content: center;
-        column-gap: 40px;
+        justify-content: space-between;   
     }
 
     .submit > input{
-        width: 700px;
+        width: 600px;
     }
     .submit > button {
         width: 60px;
+        margin-right: 40px;
     }
     .carrinho-desktop{
         display: inline;        
@@ -321,9 +320,38 @@ footer{
         font-size: 3rem;
     }
 
-    #link-carrinho{
+    #mobile-carrinho{
         display: none;
     }
+
+    .lista-nav > li{
+        transition: .4s;
+    }
+
+    .lista-nav > li:hover{
+        transform: translateY(-3px);
+    }
+
+    .lista-nav > li > a{
+        padding: 12px;
+        border-radius: 10px;
+
+        transition: .4s;
+        
+    }
+
+    .lista-nav > li > a:hover{
+        background-color: #00000077;
+    }
+
+    .lista-nav > li{
+        transition: .4s;
+    }
+
+    .lista-produtos > li:hover{
+        background-color: #1414149f;
+    }
+
 
     .footer-index{
         justify-content: space-evenly;
