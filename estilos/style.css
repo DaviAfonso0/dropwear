@@ -38,12 +38,31 @@ header{
     align-items: center;
 }
 
+#menu{
+    background: none;
+    border: none;
+    font-size: 2.4rem;
+    color: white;
+    margin: 20px 0px;
+    cursor: pointer;
+}
+
 .nav-header{
+    display: none;
+}
+
+.nav-header.ativo{
+    display: block;
+}
+
+.nav-header ul{
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
 }
+
+
 
 .submit{
     display: flex;
@@ -256,6 +275,14 @@ footer{
         display: none;
     }
 
+    #menu{
+        display: none;
+    }
+
+    .nav-header{
+        display: block;
+    }
+
     #catalogo{
     display: none;
 }
@@ -309,7 +336,7 @@ footer{
         display: inline;
     }
 
-    .nav-header{
+    .nav-header ul{
         flex-flow: row nowrap;
         justify-content: center;
     }
